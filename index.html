@@ -7,20 +7,25 @@
   <!-- Google Verification -->
   <meta name="google-site-verification" content="dzPFMNrF1XvkYYuh50Ls_6Pm7gLnRx3leUggKUJGsl0" />
 
-  <title>Public Identity | Gavin Borrageiro de la Raya</title>
+  <title>Public Identity | Armitger</title>
 
-  <!-- Identity Schema (JSON-LD) -->
+  
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
-    "name": "(Armitage) Borrageiro de la Raya",
-    "alternateName": ["Gavin Borrageiro", "Armitager"],
-    "description": "Public advocate, governance strategist, and cultural preservationist with documented Minho-Galician lineage traced to the Serra do Gerês 
-    within Peneda-Gerês National Park in Portugal dating back to the 1500 AD. Borrageiro de la Raya has a 30-year executive career across global financial markets.",
+    "name": "Armitger",
+    "alternateName": ["Gavin Borrageiro de la Raya", "Armitage Borrageiro de la Raya", "Gavin Borrageiro", "Gavin Dennis Borrageiro", "Armitager"],
+    "description": "Public advocate, governance strategist, and cultural preservationist with documented Minho-Galician lineage traced to the Serra do Gerês within Peneda-Gerês National Park in Portugal dating back to the 1500 AD. Borrageiro de la Raya has a 30-year executive career across global financial markets.",
+    
+    "sameAs": [
+      "https://linkedin.com",
+      "https://saflii.org",
+      "https://powerlaw.africa"
+    ],
 
     "nationality": [
-      { "@type": "Country", "name": "Portugual" },
+      { "@type": "Country", "name": "Portugal" },
       { "@type": "Country", "name": "South Africa" }
     ],
 
@@ -35,8 +40,8 @@
       "Financial Market Infrastructure Governance",
       "Securities Lending and Clearing Systems",
       "Global Banking Operations",
-      "Equities Floor Trading"
-      "Global Equities Client Services"
+      "Equities Floor Trading",
+      "Global Equities Client Services",
       "Constitutional Law Advocacy",
       "Privacy Rights",
       "Public Interest Litigation",
@@ -47,206 +52,152 @@
     ],
 
     "worksFor": [
+      { "@type": "Organization", "name": "Gb Incorporated South Africa" },
       { "@type": "Organization", "name": "UBS Group" },
       { "@type": "Organization", "name": "JPMorgan Chase" },
       { "@type": "Organization", "name": "Credit Suisse" },
       { "@type": "Organization", "name": "Lehman Brothers" },
-      { "@type": "Organization", "name": "Rand Merchant Bank" },
-      
-    ],
-
-    "owns": [
-      {
-        "@type": "Organization",
-        "name": "STC Publishing Philippines",
-        "legalName": "STC Publishing OPC",
-        "founder": "Armitage Gavin Borrageiro de la Raya",
-        "address": { "@type": "PostalAddress", "addressCountry": "Philippines" },
-        "description": "Registered Philippine business operation focused on financial literacy publishing, eMedia development, and public-interest educational content."
-      },
-      {
-        "@type": "Organization",
-        "name": "Magellan Governance",
-        "address": { "@type": "PostalAddress", "addressCountry": "South Africa" },
-        "description": "South African governance and advisory entity providing governance frameworks, compliance advisory, and strategic oversight."
-      },
-      {
-        "@type": "Organization",
-        "name": "Catalyst Advisory (Pty) Ltd",
-        "legalName": "Catalyst Advisory Proprietary Limited",
-        "address": { "@type": "PostalAddress", "addressCountry": "South Africa" },
-        "description": "South African governance and compliance advisory firm supporting organisations with regulatory alignment, assurance preparation, and strategic compliance communication."
-      }
+      { "@type": "Organization", "name": "FIX Trading Community" }
     ]
   }
   </script>
 
+  <!-- Clean, Minimal Presentation Styling -->
   <style>
+    :root {
+      --bg-color: #fcfcfc;
+      --text-color: #1e2229;
+      --accent-color: #4a5768;
+      --border-color: #e2e8f0;
+      --code-bg: #f4f6f8;
+    }
     body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      margin: 0;
-      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
       line-height: 1.6;
-      color: #222;
-      background: #f7f7f9;
+      margin: 0;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
     }
-    .page {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 2rem 1.5rem 3rem;
-      background: #ffffff;
+    .container {
+      max-width: 680px;
+      width: 100%;
     }
-    h1, h2, h3 {
-      font-weight: 600;
-      margin-top: 1.5rem;
-      margin-bottom: 0.75rem;
+    header {
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 20px;
+      margin-bottom: 30px;
     }
     h1 {
       font-size: 2rem;
-      border-bottom: 2px solid #e0e0e5;
-      padding-bottom: 0.5rem;
+      font-weight: 600;
+      margin: 0 0 5px 0;
+      letter-spacing: -0.02em;
     }
-    section {
-      margin-bottom: 1.5rem;
-    }
-    .tagline {
+    .subtitle {
+      color: var(--accent-color);
       font-size: 1rem;
-      color: #555;
-      margin-top: 0.5rem;
-    }
-    ul {
-      margin: 0.5rem 0 0.75rem;
-      padding-left: 1.25rem;
-    }
-    li {
-      margin-bottom: 0.25rem;
-    }
-    .pill-list {
-      list-style: none;
-      padding-left: 0;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.4rem;
-    }
-    .pill-list li {
       margin: 0;
     }
-    .pill {
-      display: inline-block;
-      padding: 0.2rem 0.6rem;
-      border-radius: 999px;
-      background: #eef0f7;
-      font-size: 0.85rem;
-      color: #444;
+    section {
+      margin-bottom: 30px;
     }
-    .subtle {
-      color: #666;
-      font-size: 0.9rem;
+    h2 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 5px;
+    }
+    p {
+      font-size: 1rem;
+      margin: 0 0 15px 0;
+      text-align: justify;
+    }
+    ul {
+      padding-left: 20px;
+      margin: 0;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    pre {
+      background: var(--code-bg);
+      border: 1px solid var(--border-color);
+      padding: 15px;
+      border-radius: 6px;
+      font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+      font-size: 0.85rem;
+      overflow-x: auto;
+      white-space: pre-wrap;
+      word-break: break-all;
+    }
+    footer {
+      margin-top: 50px;
+      font-size: 0.85rem;
+      color: var(--accent-color);
+      border-top: 1px solid var(--border-color);
+      padding-top: 15px;
+    }
+    a {
+      color: var(--accent-color);
+      text-decoration: underline;
+    }
+    a:hover {
+      color: #000;
     }
   </style>
 </head>
-
 <body>
-  <div class="page">
+
+  <div class="container">
     <header>
-      <h1>Armitage Gavin Borrageiro de la Raya</h1>
-      <p class="tagline">
-        Public advocate, governance strategist, and cultural preservationist with documented Minho–Galician lineage and a three‑decade executive career across global financial markets.
-      </p>
+      <h1>Armitger</h1>
+      <p class="subtitle">Governance Strategy &amp; Public Interest Advocacy</p>
     </header>
 
     <section>
-      <h2>Identity and Citizenship</h2>
+      <h2>Overview</h2>
       <p>
-        Gavin Borrageiro de la Raya is a dual‑citizen governance professional and public advocate with traceable ancestral roots in Alto Borrageiro dating back 
-        to the 1500AD within the Minho–Galicia Euroregion, and a long‑standing presence across Southern African and European financial markets.
+        Public identity profile for Gavin Borrageiro de la Raya. A professional executive with a 30-year career history across global financial market structures, international banking operations, and complex institutional clearing systems. Alongside corporate background functions, works as a governance strategist and public interest advocate focused on civil privacy rights, constitutional protections, and regional cultural preservation.
       </p>
+    </section>
+
+    <section>
+      <h2>Areas of Record</h2>
       <ul>
-        <li><strong>Citizenship:</strong> Portugal; South Africa </li>
-        <li><strong>Heritage:</strong> Minho–Galician lineage with documented family records dating back to 1500AD.</li>
-        <li><strong>Languages:</strong> English</li>
+        <li><strong>Financial Infrastructure:</strong> Operational alignment, equities trading desks, and international clearing compliance.</li>
+        <li><strong>Public Advocacy:</strong> Public interest litigation supporting constitutional transparency, data privacy protections, and civil rights frameworks.</li>
+        <li><strong>Cultural Heritage:</strong> Historical documentation and regional lineage preservation tracing back to historical Minho-Galician roots.</li>
       </ul>
     </section>
 
     <section>
-      <h2>Education</h2>
-      <ul>
-        <li>
-          <strong>University of West London</strong> — Business Administration
-        </li>
-      </ul>
+      <h2>Public Records &amp; Verifications</h2>
+      <p>
+        Key operational components and legal entries are cross-referenced across open repositories, including the 
+        <a href="https://saflii.org" target="_blank" rel="noopener">SAFLII High Court Judgments Archive</a>, 
+        the <a href="https://powerlaw.africa" target="_blank" rel="noopener">Power Law Public Records Directory</a>, and formal financial index alignments.
+      </p>
     </section>
 
+    <!-- Cryptographic Verification Layer -->
     <section>
-      <h2>Professional Profile</h2>
-      <p>
-        Borrageiro’s career spans over 30 years in international banking, market infrastructure, and governance strategy. He has held
-        senior executive and director‑level roles across leading global institutions, with a focus on structured finance, securities lending, 
-        clearing and settlement, and straight‑through processing.
-      </p>
-      <h3>Selected Executive Roles</h3>
-      <ul>
-        <li><strong>GB Incorporated (South Africa):</strong> Director</li>
-        <li><strong>Credit Suisse:</strong> Head of Operations </li>
-        <li><strong>Lehman Brothers:</strong> Director</li>
-        <li><strong>Rand Merchant Bank:</strong> Head of Project Finance, Structured Trade and Commodity Finance (PTCF)</li>
-        <li><strong>JPMorgan Chase Bank:</strong> Vice President</li>
-        <li><strong>JPMorgan South Africa:</strong> Associate Vice President</li>
-        <li><strong>UBS Group:</strong> Associate Director</li>
-      </ul>
+      <h2>Cryptographic Identity Keys</h2>
+      <p>For verified communication and programmatic identity signing, use the public key configuration block below:</p>
+      <pre>-----BEGIN PGP PUBLIC KEY BLOCK-----
+
+[PASTE_YOUR_ACTUAL_EXEMPTED_PGP_OR_SSH_PUBLIC_KEY_STRING_HERE]
+
+-----END PGP PUBLIC KEY BLOCK-----</pre>
     </section>
 
-    <section>
-      <h2>Registered Business Operations</h2>
-
-      <h3>STC Publishing OPC (Philippines)</h3>
-      <p>
-        STC Publishing OPC (STCP) is the registered Philippine business operation founded and owned by (Armitage) Borrageiro de la Raya. The corporation 
-        focuses on financial literacy publishing, eMedia development, and public‑interest educational content, including several Seedance series and 
-        STC published financial‑education materials.
-      </p>
-
-      <h3>Magellan Governance (South Africa)</h3>
-      <p>
-        Magellan Governance is a South African governance and advisory entity owned by Gavin Borrageiro de la Raya.The organisation provides governance 
-        frameworks, compliance advisory, and strategic oversight services to institutions operating within regulated environments.
-      </p>
-
-      <h3>Catalyst Advisory (Pty) Ltd (South Africa)</h3>
-      <p>
-        Catalyst Advisory (Pty) Ltd is a South African governance and compliance advisory firm founded by Borrageiro de la Raya, who serves 
-        as its founding shareholder. The company supports organisations with governance structures, regulatory alignment, assurance preparation, 
-        and strategic compliance communication.
-      </p>
-    </section>
-
-    <section>
-      <h2>Areas of Focus and Advocacy</h2>
-      <ul class="pill-list">
-        <li><span class="pill">Business and Governance Strategy</span></li>
-        <li><span class="pill">Financial Market Infrastructure Governance</span></li>
-        <li><span class="pill">Securities Lending and Clearing Systems</span></li>
-        <li><span class="pill">Global Banking Operations</span></li>
-        <li><span class="pill">Constitutional Law Advocacy</span></li>
-        <li><span class="pill">Privacy Rights</span></li>
-        <li><span class="pill">Public Interest Litigation</span></li>
-        <li><span class="pill">Financial Literacy Publishing</span></li>
-        <li><span class="pill">eMedia Development</span></li>
-        <li><span class="pill">Minho–Galician Toponymy</span></li>
-        <li><span class="pill">Cultural Preservation</span></li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Public Identity Statement</h2>
-      <p>
-        This page records the verified public identity of Gavin Borrageiro (de la Raya), reflecting his documented governance, professional, and cultural roles 
-        across multiple jurisdictions. It provides a traceable reference point for institutions, communities, and collaborators engaging with his work in governance, 
-        financial markets, public advocacy, and cultural preservationist with documented Minho-Galician lineage traced to the Serra do Gerês within Peneda-Gerês National Park 
-        in Portugal dating back to 1500AD. Borrageiro de la Raya has a 30-year executive career across global financial markets and a long‑standing professional footprint in 
-        Europe, Philippines and Southern Africa. 
-      </p>
-    </section>
+    <footer>
+      <p>&copy; 2026 Public Identity Record. Index tracking configured for cryptographic data compliance.</p>
+    </footer>
   </div>
+
 </body>
 </html>
